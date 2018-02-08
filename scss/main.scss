@@ -1,4 +1,22 @@
 body{
-    background-color: blue;
-    color: white;
+    color: #1b1d28;
+    font-family: Lato Regular, Helvetica, sans-serif;
+    font-size: 1.1875 em;
+}
+
+.fieldStyle{
+    padding: 1em;
+    margin: 10px;
+    background-color: #efeee9;
+}
+
+.darkTheme{
+    padding: 1em;
+    margin: 10px;
+    background-color: #2c314f;
+    color: #fff;
+}
+
+.biggerText{
+    font-size: 2em;
 }

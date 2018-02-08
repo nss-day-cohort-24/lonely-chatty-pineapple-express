@@ -18,14 +18,22 @@ body {
     font-size: 16px;
 }
 
+main{
+    padding: 3em;
+}
+
 nav {
     display: block;
     position: fixed;
     top: 0;
-    background-color: $lightgray;
+    background-color: $darkblue;
     height: 135px;
     width: 100%;
     margin: 0;
+}
+
+.background-blue{
+    background-color: $lightgray;
 }
 
 .logo {
@@ -35,9 +43,10 @@ nav {
     left: 20px;
     z-index: 15;
 }
- h1{
-    color: $lightblue;
-   }
+
+.checks{
+    padding: 2em;
+}
 
 h1 {
     color: $lightblue;
@@ -134,9 +143,10 @@ input[type=submit] {
 
 aside{
     display: block;
-    margin-top: 150px;
+    margin-top: 125px;
     margin-left: auto; 
     margin-right: auto;
+    margin-bottom: 2em;
     text-align: center;
 }
 
@@ -147,4 +157,9 @@ aside{
 .row{
     align-items: center;
     margin-top: 45px;
+}
+
+.initial{
+    color: $lightblue;
+    text-weight: bold;
 }

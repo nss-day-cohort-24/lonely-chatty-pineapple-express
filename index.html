@@ -12,13 +12,13 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="nav">
             <div class="row">
                 <div class="col-logo">
-                    <img src="imgs/logo-dark.png" alt="company logo" class="logo">
+                    <img id="logo" class="logo" src="imgs/logo-light.png" alt="Chatty company logo">
                 </div>
                 <div class="col-xs-6 form-inline">
-                    <input class="form-control form-control-lg" type="text" placeholder="Please type your message and hit enter.">
+                    <input id="user-input" class="form-control form-control-lg" type="text" placeholder="Please type your message and hit enter.">
                 </div>
                 <div class="col-auto">
                     <!--input type="submit" value="Enter"-->
@@ -27,7 +27,7 @@
             </div>
         </nav>
     </header>
-
+<main id="main-bg">
     <aside>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="checkbox" value="" id="btn-color">
@@ -43,9 +43,10 @@
         </div>
     </aside>
 
-    <main>
+    <section>
         <div id='user-text'> </div>
-    </main>
+    </section>
+</main>
 
 <script src="dist/app.js"></script>
 </body>

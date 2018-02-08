@@ -1,4 +1,5 @@
 //Variables
+
 $darkblue: #2c314f;
 $lightblue: #7acdcf;
 $lightgray: #efeee9;
@@ -32,14 +33,17 @@ nav {
     left: 20px;
     z-index: 15;
 }
-
-h1 {
+ h1{
     color: $lightblue;
     position: relative;
     top: 90px;
     left: 100px;
     z-index: 12;
     font-size: 25px;
+   }
+
+h1 {
+    color: $lightblue;
 }
 
 /*.img {
@@ -53,19 +57,20 @@ h1 {
     top: -5px;
     left: 330px;
     z-index: 12;
-}
 
 input[type=text],
 select,
 textarea {
     width: 40%;
     padding: 30px;
+
     border: 1px solid $regulargray;
     margin-top: 6px;
     margin-bottom: 6px;
     margin-right: 10px;
     resize: vertical;
     border-radius: 20px;
+   
 }
 
 input[type=submit] {
@@ -86,6 +91,20 @@ input[type=submit] {
     position: absolute;
     top: 5px;
     left: 950px;
+    z-index: 15;
+}
+.trash {
+    width: 80px;
+    position: absolute;
+    top: 5px;
+    left: 950px;
+    z-index: 15;
+}
+.phone {
+    width: 75px;
+    position: absolute;
+    top: 5px;
+    left: 1100px;
     z-index: 15;
 }
 

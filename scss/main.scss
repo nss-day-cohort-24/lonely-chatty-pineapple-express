@@ -36,7 +36,7 @@ nav {
  h1{
     color: $lightblue;
     position: relative;
-    top: 67px;
+    top: 90px;
     left: 100px;
     z-index: 12;
     font-size: 25px;
@@ -46,15 +46,15 @@ h1 {
     color: $lightblue;
 }
 
-.img {
+/*.img {
     position: relative;
     top: 145px;
     width: 100%;
-}
+}*/
 
 .input-b {
     position: relative;
-    top: -40px;
+    top: -5px;
     left: 330px;
     z-index: 12;
 
@@ -67,23 +67,24 @@ textarea {
     border: 1px solid $regulargray;
     margin-top: 6px;
     margin-bottom: 6px;
+    margin-right: 10px;
     resize: vertical;
     border-radius: 20px;
    
 }
 
 input[type=submit] {
+    width: 150px;
     background-color: $darkblue;
     color: white;
     padding: 12px 50px;
+    margin-right: 10px;
     border: none;
     cursor: pointer;
     border-radius: 5%;
-}
-
-input[type=submit]:hover {
+     &:hover {
     background-color: $lightblue;
-}
+}}
 
 .trash {
     width: 80px;
@@ -107,13 +108,13 @@ input[type=submit]:hover {
     z-index: 15;
 }
 
-.phone {
+/*.phone {
     width: 75px;
     position: absolute;
     top: 5px;
     left: 1100px;
     z-index: 15;
-}
+}*/
 
 .fieldStyle {
     padding: 1em;

@@ -4,15 +4,20 @@ $darkblue: #2c314f;
 $lightblue: #7acdcf;
 $lightgray: #efeee9;
 $regulargray: #aaaaaa;
-$dark:#1b1d28; 
-$my-font: 'Montserrat', sans-serif;
+$black: #1b1d28; 
+$primaryFont: 'Lato', Helvetica, sans-serif;
+$secondaryFont:'Montserrat', sans-serif;
 
 *{
     box-sizing: border-box;
 }
 body{
-    background-color: $regulargray;
+  padding: 1em;
+  color: #1b1d28;
+  font-family: $primaryFont;
+  font-size: 16px;
 }
+
 nav{
     position:fixed;
     background-color: $lightgray;
@@ -28,15 +33,14 @@ nav{
 }
  h1{
     color: $lightblue;
-    position: relative;
-    top:75px;
-    left:20px;
-}
+   }
+
 .img{
     position:relative;
     top:145px;
     width:100%; 
 }
+
 .input-b{
     position: relative;
     top:-60px;
@@ -44,11 +48,14 @@ nav{
     z-index: 12;
     
 }
+
 input[type=text],
 select,
 textarea {
-    width:60%;
-    padding: 25px;
+
+   
+    width: 40%;
+    padding: 30px;
     border: 1px solid $regulargray;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -68,5 +75,22 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color:$lightblue;
+}
+
+.fieldStyle{
+    padding: 1em;
+    margin: 10px;
+    background-color: #efeee9;
+}
+
+.darkTheme{
+    padding: 1em;
+    margin: 10px;
+    background-color: #2c314f;
+    color: #fff;
+}
+
+.biggerText{
+    font-size: 2em;
 }
 

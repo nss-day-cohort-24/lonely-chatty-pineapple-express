@@ -12,18 +12,20 @@ $secondaryFont:'Montserrat',sans-serif;
 }
 
 body {
-    padding: 1em;
+    padding: 0;
     color: #1b1d28;
     font-family: $primaryFont;
     font-size: 16px;
 }
 
 nav {
+    display: block;
     position: fixed;
+    top: 0;
     background-color: $lightgray;
-    height: 150px;
+    height: 135px;
     width: 100%;
-    margin: -20px -15px 0PX -15PX;
+    margin: 0;
 }
 
 .logo {
@@ -35,11 +37,6 @@ nav {
 }
  h1{
     color: $lightblue;
-    position: relative;
-    top: 90px;
-    left: 100px;
-    z-index: 12;
-    font-size: 25px;
    }
 
 h1 {
@@ -54,24 +51,26 @@ h1 {
 
 .input-b {
     position: relative;
-    top: -5px;
-    left: 330px;
+    top: 1em;
+    left: 350px;
     z-index: 12;
-
-input[type=text],
-select,
-textarea {
-    width: 40%;
-    padding: 30px;
-
-    border: 1px solid $regulargray;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-right: 10px;
-    resize: vertical;
-    border-radius: 20px;
-   
+    max-width: 80%;
 }
+
+// input[type=text],
+// select,
+// textarea {
+//     width: 40%;
+//     padding: 30px;
+
+//     border: 1px solid $regulargray;
+//     margin-top: 6px;
+//     margin-bottom: 6px;
+//     margin-right: 10px;
+//     resize: vertical;
+//     border-radius: 20px;
+   
+// }
 
 input[type=submit] {
     width: 150px;
@@ -131,4 +130,21 @@ input[type=submit] {
 
 .biggerText {
     font-size: 2em;
+}
+
+aside{
+    display: block;
+    margin-top: 150px;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+}
+
+.col-logo{
+    width: 300px;
+}
+
+.row{
+    align-items: center;
+    margin-top: 45px;
 }

@@ -1,7 +1,65 @@
+//VARIABLES
+
+$darkblue: #2c314f;
+$lightblue: #7acdcf;
+$lightgray: #efeee9;
+$regulargray: #aaaaaa;
+$black: #1b1d28; 
+$primaryFont: 'Lato', Helvetica, sans-serif;
+$secondaryFont:'Montserrat', sans-serif;
+
+*{
+    box-sizing: border-box;
+}
 body{
-    color: #1b1d28;
-    font-family: Lato Regular, Helvetica, sans-serif;
-    font-size: 1.1875 em;
+  padding: 1em;
+  color: #1b1d28;
+  font-family: $primaryFont;
+  font-size: 16px;
+}
+ 
+h1{
+    color: white;
+    font-size: 2.5em;
+   
+}
+
+.img{
+    position:relative;
+    text-outline: 0px;
+    width: 100%
+}
+
+.input-b{
+    position: relative;;
+    top:-200px;
+    left:550px;
+    z-index: 8;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 40%;
+    padding: 30px;
+    border: 1px solid $regulargray;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 20px;
+}
+
+input[type=submit] {
+    background-color:$darkblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+input[type=submit]:hover {
+    background-color:$lightblue;
 }
 
 .fieldStyle{
@@ -20,3 +78,4 @@ body{
 .biggerText{
     font-size: 2em;
 }
+

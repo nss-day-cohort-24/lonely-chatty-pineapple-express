@@ -1,4 +1,4 @@
-//VARIABLES
+//Variables
 
 $darkblue: #2c314f;
 $lightblue: #7acdcf;
@@ -17,45 +17,60 @@ body{
   font-family: $primaryFont;
   font-size: 16px;
 }
- 
-h1{
-    color: white;
-    font-size: 2.5em;
-   
+
+nav{
+    position:fixed;
+    background-color: $lightgray;
+    height:150px;
+    width: 100%;
+    margin:0px -15px;
 }
+.logo{
+    position: absolute;
+    top:15px;
+    left:20px;
+    z-index: 15;
+}
+ h1{
+    color: $lightblue;
+   }
 
 .img{
     position:relative;
-    text-outline: 0px;
-    width: 100%
+    top:145px;
+    width:100%; 
 }
 
 .input-b{
-    position: relative;;
-    top:-200px;
-    left:550px;
-    z-index: 8;
+    position: relative;
+    top:-60px;
+    left:300px;
+    z-index: 12;
+    
 }
 
 input[type=text],
 select,
 textarea {
+
+   
     width: 40%;
     padding: 30px;
     border: 1px solid $regulargray;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
     resize: vertical;
     border-radius: 20px;
+   
 }
 
 input[type=submit] {
     background-color:$darkblue;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 50px;
     border: none;
     cursor: pointer;
-    border-radius: 20%;
+    border-radius: 5%;
 }
 
 input[type=submit]:hover {

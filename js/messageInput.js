@@ -1,20 +1,23 @@
 "use strict";
-
 let message = [];
-
 let userInput = document.getElementById('user-input');
 let printDiv = document.getElementById('user-text');
+document.addEventListener('keypress', pushMessage);
+document.querySelector("body").addEventListener("click", consoleLogEvent);
 
-document.addEventListener('keypress', pushPrintAndId);
+let messageId = document.getElementsByClassName('message');
 
-function pushPrintAndId(event){
+function consoleLogEvent(event) {
+    console.log(event.target.innerText);
+}
+
+function pushMessage(){
   if(event.keyCode === 13){
     message.push(event.target.value);
-    console.log(message);
-    printDiv.innerHTML +=`<p>${message[message.length - 1]}</p>`;
+    printDiv.innerHTML += `<p class="message">${message[message.length - 1]}<button class="delete"></button></p>`;
     userInput.value = '';
   }
 }
 
 
-module.exports = pushPrintAndId;
+module.exports = {pushMessage,consoleLogEvent};

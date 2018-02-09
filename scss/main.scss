@@ -81,7 +81,7 @@ input[type=text],
 select,
 textarea {
     width: 700px;
-    padding: 30px;
+    padding: 25px;
     border: 1px solid $regulargray;
     margin-top: 15px;
     // margin-bottom: 6px;
@@ -102,7 +102,7 @@ input[type=submit] {
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 5%;
+    border-radius: 5px;
      &:hover {
     background-color: $regulargray;
 }}

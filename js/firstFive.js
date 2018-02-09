@@ -33,8 +33,4 @@ function dataRequestFailed(event) {
 
 
 
-
-
-// document.getElementById
-
 // module.exports = ;

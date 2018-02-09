@@ -80,7 +80,7 @@ input[type=text],
 select,
 textarea {
     width: 700px;
-    padding: 30px;
+    padding: 25px;
     border: 1px solid $regulargray;
     margin-top: 15px;
     // margin-bottom: 6px;
@@ -112,12 +112,11 @@ input[type=submit] {
 }}
 
 .form-check-inline {
-    width: 15%;
     background-color: $lightblue;
     border: 3px solid $lightblue;
     padding: 5px 5px;
     border-radius: 25px;
-    color: $lightgray;
+    color: #fff;
     &:hover {
     transition: ease-in .4s;
     border: 3px solid $lightblue;
@@ -138,6 +137,7 @@ input[type=submit] {
 .form-check-label {
     font-weight: bold;
     margin: auto;
+    padding: 0px 10px;
 }
 
 li {

@@ -16,7 +16,7 @@ function dataRequestComplete(event) {
     showData(data);
     function showData(jason){
         for(var key in jason){
-            divPrint.innerHTML += `<p>${jason[key].message}</p>`;
+            divPrint.innerHTML += `<p class ="initial">${jason[key].message}</p>`;
         }
     }
 

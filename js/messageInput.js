@@ -6,10 +6,13 @@ let printDiv = document.getElementById('user-text');
 document.addEventListener('keypress', getMessage);
 document.getElementById('clearAll').addEventListener('click', clearAll);
 
-// document.getElementById('list').addEventListener('click', showList);
+document.getElementById('list').addEventListener('click', showList);
  
 function showList(){
-    printDiv.innerHTML = messageCollect.join('');
+    printDiv.innerHTML = '';
+    messageCollect.forEach(function(item){
+        printDiv.innerHTML += `<li>${item.message}</li>`;
+    });
 }
 
 function clearAll() {
@@ -22,7 +25,7 @@ function getMessage(){
     if(event.keyCode === 13){
     console.log(event.target.value);
     var message = event.target.value;
-    var id = Math.random();
+    var id = Math.random().toFixed('6');
     pushMessage(message,id);
     }
 }
@@ -33,7 +36,7 @@ function pushMessage(event, name){
         message: event,
         identifier: name,
         });
-    console.log(messageCollect);
+        console.log(messageCollect);
     printToDiv(event, name);
     userInput.value = '';
 }

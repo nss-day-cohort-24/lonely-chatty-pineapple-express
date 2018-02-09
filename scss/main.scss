@@ -123,6 +123,25 @@ input[type=submit] {
     z-index: 15;
 }
 
+/*.phone {
+    width: 75px;
+    position: absolute;
+    top: 5px;
+    left: 1100px;
+    z-index: 15;
+}*/
+
+#user-text {
+    padding: 1em;
+    margin: 10px;
+}
+
+.fieldStyle {
+    padding: 1em;
+    margin: 10px;
+    background-color: #efeee9;
+}
+
 .darkTheme {
     background-color: $darkblue;
     color: #fff;

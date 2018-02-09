@@ -3,15 +3,15 @@
 // DEFINE VARIABLE ARE REQUIRE MODULES
 let messageArray = require("./messageInput");
 let messageCollect = messageArray.messageCollect;
-let messageDelete = messageArray.deleteAllMessages;
-let printDiv = document.getElementById('user-text');
+// let messageDelete = messageArray.deleteAllMessages;
+// let printDiv = document.getElementById('user-text');
 let deleteAll = document.getElementById('delete');
 
 
 // EVENT LISTENERS
-document.getElementById('list').addEventListener('click', messageArray.showList);
-document.addEventListener('keypress', messageArray.getMessage);
-deleteAll.addEventListener('click', messageArray.deleteAllMessages);
+// document.getElementById('list').addEventListener('click', messageArray.showList);
+// document.addEventListener('keypress', messageArray.getMessage);
+// deleteAll.addEventListener('click', messageArray.deleteAllMessages);
 document.addEventListener("click", removeMessage);
 
 

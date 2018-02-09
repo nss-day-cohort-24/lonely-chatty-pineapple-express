@@ -62,7 +62,7 @@ function deleteAllMessages(){
 
 function showList(){
     console.log('ran'); 
-    printDiv.innerHTML = '';
+    // printDiv.innerHTML = '';
     messageCollect.forEach(function(item){
         printDiv.innerHTML += `<li>${item.message}</li>`;
     });

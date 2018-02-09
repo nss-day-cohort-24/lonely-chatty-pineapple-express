@@ -1,8 +1,160 @@
-body{
-    background-color: blue;
+//Variables
+
+$darkblue: #2c314f;
+$lightblue: #7acdcf;
+$lightgray: #efeee9;
+$regulargray: #aaaaaa;
+$black: #1b1d28;
+$primaryFont: 'Lato',Helvetica,sans-serif;
+$secondaryFont:'Montserrat',sans-serif;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    color: #1b1d28;
+    font-family: $primaryFont;
+    font-size: 16px;
+}
+
+main{
+    padding: 3em;
+    height: calc(100vh - 176px);
+}
+
+nav {
+    top: 0;
+    background-color: $darkblue;
+    margin: 0;
+    z-index: 1000;
+    align-items: center; 
+    flex-wrap: nowrap; 
+}
+
+h1 {
+    color: $lightblue;
+    font-size: 2.5em;
+}
+
+aside{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.bg-lightBlue{
+    background-color: $lightblue
+}
+
+.bg-grey{
+    background-color: $regulargray;
+}
+
+.bg-navy{
+    background-color: $darkblue;
+}
+
+.bg-black{
+    background-color: $black;
+}
+
+.logo {
+    width: 200px;
+    position: relative;
+    margin: 20px;
+    z-index: 15;
+    align-self: flex-start;
+}
+
+.input-b {
+    position: absolute;
+    top: 1em;
+    left: 300px;
+    z-index: 12;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 700px;
+    padding: 30px;
+    border: 1px solid $regulargray;
+    margin-top: 15px;
+    // margin-bottom: 6px;
+    // margin-right: 10px;
+    // resize: vertical;
+    // border-radius: 20px;
+}
+
+.form-inline,
+.form-control{
+    width: 100%;
+}
+
+input[type=submit] {
+    width: 150px;
+    background-color: $lightblue;
     color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+     &:hover {
+    background-color: $lightgray;
+    color: $regulargray
 }
 
 li {
     list-style-type: none;
+    padding: 12px 50px;}
+
+.trash {
+    width: 80px;
+    position: absolute;
+    top: 5px;
+    left: 950px;
+    z-index: 15;
+}
+.phone {
+    width: 75px;
+    position: absolute;
+    top: 5px;
+    left: 1100px;
+    z-index: 15;
+}
+
+/*.phone {
+    width: 75px;
+    position: absolute;
+    top: 5px;
+    left: 1100px;
+    z-index: 15;
+}*/
+
+#user-text {
+    padding: 1em;
+    margin: 10px;
+}
+
+.fieldStyle {
+    padding: 1em;
+    margin: 10px;
+    background-color: #efeee9;
+}
+
+.darkTheme {
+    background-color: $darkblue;
+    color: #fff;
+}
+
+.biggerText {
+    font-size: 1.5em;
+}
+
+.initial{
+    color: $lightblue;
+    text-weight: bold;
 }

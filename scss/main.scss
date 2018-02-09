@@ -98,13 +98,13 @@ textarea {
 input[type=submit] {
     width: 150px;
     background-color: $lightblue;
+    margin: 5px;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5%;
      &:hover {
-    background-color: $lightgray;
-    color: $regulargray
+    background-color: $regulargray;
 }}
 
 li {

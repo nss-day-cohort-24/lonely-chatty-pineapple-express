@@ -1,0 +1,11 @@
+[
+    {"message":"Welcome to Chatty! To get you started, let's check out the simple interface."},
+    
+    {"message":"Type your message in the input box at the top of the page."},
+    
+    {"message":"Press the send arrow or hit return/enter to send your message."},
+    
+    {"message":"To delete your messages, select the message you wish to delete and press the trash icon.  You can also clear all messages with the trash icon next to the input box."},
+    
+    {"message":"Spruce your messages up a bit by checking one or more of our themes!"}
+]

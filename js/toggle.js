@@ -9,9 +9,7 @@ function darkTheme() {
     var chatDiv = document.getElementById("main-bg");
     chatDiv.classList.toggle("darkTheme");
     var nav = document.getElementById("nav");
-    nav.classList.toggle("background-blue");
-    var nav = document.getElementById("logo");
-    nav.src="imgs/logo-light.png";
+    nav.classList.toggle("bg-black");
 }
 
 function biggerText() {

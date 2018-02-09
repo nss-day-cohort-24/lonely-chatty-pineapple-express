@@ -20,87 +20,94 @@ body {
 
 main{
     padding: 3em;
+    height: calc(100vh - 176px);
 }
 
 nav {
-    display: block;
-    position: fixed;
     top: 0;
     background-color: $darkblue;
-    height: 135px;
-    width: 100%;
     margin: 0;
-}
-
-.background-blue{
-    background-color: $lightgray;
-}
-
-.logo {
-    width: 250px;
-    position: absolute;
-    top: -55px;
-    left: 20px;
-    z-index: 15;
-}
-
-.checks{
-    padding: 2em;
+    z-index: 1000;
+    align-items: center; 
+    flex-wrap: nowrap; 
 }
 
 h1 {
     color: $lightblue;
+    font-size: 2.5em;
 }
 
-/*.img {
+aside{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.bg-lightBlue{
+    background-color: $lightblue
+}
+
+.bg-grey{
+    background-color: $regulargray;
+}
+
+.bg-navy{
+    background-color: $darkblue;
+}
+
+.bg-black{
+    background-color: $black;
+}
+
+.logo {
+    width: 200px;
     position: relative;
-    top: 145px;
-    width: 100%;
-}*/
+    margin: 20px;
+    z-index: 15;
+    align-self: flex-start;
+}
 
 .input-b {
-    position: relative;
+    position: absolute;
     top: 1em;
-    left: 350px;
+    left: 300px;
     z-index: 12;
-    max-width: 80%;
 }
 
-// input[type=text],
-// select,
-// textarea {
-//     width: 40%;
-//     padding: 30px;
+input[type=text],
+select,
+textarea {
+    width: 700px;
+    padding: 30px;
+    border: 1px solid $regulargray;
+    margin-top: 15px;
+    // margin-bottom: 6px;
+    // margin-right: 10px;
+    // resize: vertical;
+    // border-radius: 20px;
+}
 
-//     border: 1px solid $regulargray;
-//     margin-top: 6px;
-//     margin-bottom: 6px;
-//     margin-right: 10px;
-//     resize: vertical;
-//     border-radius: 20px;
-   
-// }
+.form-inline,
+.form-control{
+    width: 100%;
+}
 
 input[type=submit] {
     width: 150px;
-    background-color: $darkblue;
+    background-color: $lightblue;
     color: white;
     padding: 12px 50px;
-    margin-right: 10px;
     border: none;
     cursor: pointer;
     border-radius: 5%;
      &:hover {
-    background-color: $lightblue;
+    background-color: $lightgray;
+    color: $regulargray
 }}
 
-.trash {
-    width: 80px;
-    position: absolute;
-    top: 5px;
-    left: 950px;
-    z-index: 15;
-}
 .trash {
     width: 80px;
     position: absolute;
@@ -116,47 +123,13 @@ input[type=submit] {
     z-index: 15;
 }
 
-/*.phone {
-    width: 75px;
-    position: absolute;
-    top: 5px;
-    left: 1100px;
-    z-index: 15;
-}*/
-
-.fieldStyle {
-    padding: 1em;
-    margin: 10px;
-    background-color: #efeee9;
-}
-
 .darkTheme {
-    padding: 1em;
-    margin: 10px;
-    background-color: #2c314f;
+    background-color: $darkblue;
     color: #fff;
 }
 
 .biggerText {
-    font-size: 2em;
-}
-
-aside{
-    display: block;
-    margin-top: 125px;
-    margin-left: auto; 
-    margin-right: auto;
-    margin-bottom: 2em;
-    text-align: center;
-}
-
-.col-logo{
-    width: 300px;
-}
-
-.row{
-    align-items: center;
-    margin-top: 45px;
+    font-size: 1.5em;
 }
 
 .initial{

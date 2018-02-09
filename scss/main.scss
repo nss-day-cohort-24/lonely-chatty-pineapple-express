@@ -105,11 +105,12 @@ input[type=submit] {
      &:hover {
     background-color: $lightgray;
     color: $regulargray
-}
+}}
 
 li {
     list-style-type: none;
-    padding: 12px 50px;}
+    padding: 12px 50px;
+}
 
 .trash {
     width: 80px;

@@ -1,18 +1,47 @@
 "use strict";
-let message = [];
+let counter = 0;
+let messageCollect = [];
 let userInput = document.getElementById('user-input');
 let printDiv = document.getElementById('user-text');
-document.addEventListener('keypress', pushMessage);
+document.addEventListener('keypress', getMessage);
+document.getElementById('clearAll').addEventListener('click', clearAll);
 
-function pushMessage(){
-  if(event.keyCode === 13){
-      message.push(`${event.target.value}<button class="remove" id=${message.length}></button><br>`);
-      printDiv.innerHTML += message[message.length - 1];
-    // message.push(`${event.target.value}<button class="remove" id="${message.length}"</button>`);
-    // printDiv.innerHTML += `<li>${message[message.length - 1]}</li>`;
+// document.getElementById('list').addEventListener('click', showList);
+ 
+function showList(){
+    printDiv.innerHTML = messageCollect.join('');
+}
+
+function clearAll() {
+    // message = [];
+    printDiv.innerHTML = '';
+    // console.log(message);
+}
+
+function getMessage(){
+    if(event.keyCode === 13){
+    console.log(event.target.value);
+    var message = event.target.value;
+    var id = Math.random();
+    pushMessage(message,id);
+    }
+}
+
+function pushMessage(event, name){
+    messageCollect.push(
+        {
+        message: event,
+        identifier: name,
+        });
+    console.log(messageCollect);
+    printToDiv(event, name);
     userInput.value = '';
-  }
+}
+
+function printToDiv(message, id){
+    printDiv.innerHTML += `<li id=${id}>${message}<button class="remove"></button></li>`;
 }
 
 
-module.exports = {pushMessage, message};
+// printDiv.innerHTML += `<div id=${-messageCollect.length}>${event.target.value}<button class="remove"></button><div>`;
+module.exports = {pushMessage, messageCollect};

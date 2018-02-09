@@ -1,26 +1,35 @@
-"use strict";
+'use strict';
 
-console.log("hello remove.js");
 let messageArray = require("./messageInput");
-console.log(messageArray.message);
+let messageCollect = messageArray.messageCollect;
 let printDiv = document.getElementById('user-text');
 
-document.querySelector("body").addEventListener("click", consoleLogEvent);
 
-function consoleLogEvent(event) {
+document.addEventListener("click", identifyMessage);
+
+
+function identifyMessage (){
     if(event.target.className === 'remove'){
-    console.log(event.target.id);
-    messageArray.message.splice(event.target.id, 1);
-    printDiv.innerHTML = messageArray.message.join('');
-    console.log(messageArray.message);
-}
-}
-
-document.addEventListener('keypress', logMessage);
-
-function logMessage(){
-    if(event.keyCode === 13){
+        var index = event.target.parentNode.id;
+        messageCollect.forEach(function(item){
+            console.log(index);
+            console.log(item.identifier);
+            if(index === item.identifer){
+                console.log(item);
+            }
+        });
+        }        
     }
-  }
 
-module.exports = "test remove.js connection";
+
+
+
+// function remove(event) {
+//         if(event.target.className === 'remove'){
+//         var dadId = event.target.parentNode.id;
+//         var element = document.getElementById(dadId);
+//         element.parentNode.removeChild(element);
+//     }
+// }
+
+  

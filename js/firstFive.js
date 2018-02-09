@@ -33,4 +33,4 @@ function dataRequestFailed(event) {
 
 
 
-// module.exports = ;
+module.exports = {dataRequestComplete, dataRequestFailed};

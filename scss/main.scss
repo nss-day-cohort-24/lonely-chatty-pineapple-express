@@ -18,7 +18,7 @@ body {
 }
 
 main{
-    padding: 1em 3em;
+    padding: 0 3em;
     height: calc(100vh - 176px);
 }
 
@@ -124,14 +124,17 @@ input[type=submit] {
     color: $lightblue;
 }}
 
-#btn-size, #btn-color {
+#navBottom {
+    padding: 15px;
+}
+
+#btn-size, #btn-color, #clear {
     margin-left: 5px;
     top: 0;
     left: 0;
     height: 20px;
     width: 20px;
-    border-radius: 35px;
-    background-color: $darkblue;
+    color: blue;
 }
 
 .form-check-label {
@@ -168,11 +171,32 @@ li {
     z-index: 15;
 }*/
 
+#user-input {
+    border-radius: 5px;
+}
+
 #user-text {
     padding: 1em;
-    margin: 10px;
+    margin: 0 10px;
     border: 3px solid $lightblue;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#user-text p:nth-child(odd), #user-text li:nth-child(odd) {
+    background-color: $lightblue;
     border-radius: 15px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+#user-text p:nth-child(even), #user-text li:nth-child(even) {
+    background-color: $lightgray;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    color:$darkblue;
 }
 
 .fieldStyle {

@@ -10,6 +10,8 @@ function darkTheme() {
     chatDiv.classList.toggle("darkTheme");
     var nav = document.getElementById("nav");
     nav.classList.toggle("bg-black");
+    var nav = document.getElementById("navBottom");
+    nav.classList.toggle("bg-navy");
 }
 
 function biggerText() {

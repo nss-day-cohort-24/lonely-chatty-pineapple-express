@@ -20,6 +20,7 @@ body {
 main{
     padding: 0 3em;
     height: calc(100vh - 176px);
+    margin-top: 200px;
 }
 
 nav {
@@ -29,6 +30,15 @@ nav {
     z-index: 1000;
     align-items: center; 
     flex-wrap: nowrap; 
+}
+
+.border-bottomStripe {
+    border-style: solid;
+    border-width: 0px 0px 4px;
+    -moz-border-image: url(../imgs/nav-ground1.png) 28 27 27 repeat stretch;
+    -webkit-border-image: url(../imgs/nav-ground1.png) 28 27 27 repeat stretch;
+    -o-border-image: url(../imgs/nav-ground1.png) 28 27 27 repeat stretch;
+    border-image: url(../imgs/nav-ground1.png) 28 27 27 fill repeat stretch;
 }
 
 h1 {
@@ -50,7 +60,11 @@ aside{
 }
 
 .bg-grey{
-    background-color: white;
+    background-color: $regulargray;
+}
+
+.bg-lightGrey{
+    background-color: $lightgray
 }
 
 .bg-navy{
@@ -126,6 +140,10 @@ input[type=submit] {
 
 #navBottom {
     padding: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 138px;
 }
 
 #btn-size, #btn-color, #clear {
@@ -148,20 +166,20 @@ li {
     padding: 12px 50px;
 }
 
-.trash {
-    width: 80px;
-    position: absolute;
-    top: 5px;
-    left: 950px;
-    z-index: 15;
-}
-.phone {
-    width: 75px;
-    position: absolute;
-    top: 5px;
-    left: 1100px;
-    z-index: 15;
-}
+// .trash {
+//     width: 80px;
+//     position: absolute;
+//     top: 5px;
+//     left: 950px;
+//     z-index: 15;
+// }
+// .phone {
+//     width: 75px;
+//     position: absolute;
+//     top: 5px;
+//     left: 1100px;
+//     z-index: 15;
+// }
 
 /*.phone {
     width: 75px;
@@ -173,29 +191,31 @@ li {
 
 #user-input {
     border-radius: 5px;
+    background-color: $lightgray;
+    width: 95%;
 }
 
 #user-text {
     padding: 1em;
-    margin: 0 10px;
-    border: 3px solid $lightblue;
-    border-radius: 10px;
-    background-color: white;
+    margin: 0 8em;
+    // border: 3px solid $lightblue;
+    // border-radius: 10px;
+    // background-color: white;
 }
 
 #user-text p:nth-child(odd), #user-text li:nth-child(odd) {
     background-color: $lightblue;
-    border-radius: 15px;
+    // border-radius: 15px;
     margin-top: 15px;
-    padding: 5px 10px;
+    padding: 1em;
     color: #fff;
 }
 
 #user-text p:nth-child(even), #user-text li:nth-child(even) {
     background-color: $lightgray;
-    border-radius: 15px;
+    // border-radius: 15px;
     margin-top: 15px;
-    padding: 5px 10px;
+    padding: 1em;
     color:$darkblue;
 }
 
@@ -214,7 +234,21 @@ li {
     font-size: 1.5em;
 }
 
-.initial{
-    color: $lightblue;
-    text-weight: bold;
+// .initial{
+//     color: $lightblue;
+//     text-weight: bold;
+// }
+
+.remove {
+    background-image: url(../imgs/trash-light-navy.jpg);
+    background-repeat: no-repeat;
+    background-color: $darkblue;
+    border-radius: 5px;
+    float: right;
+    z-index: 5;
+    cursor: pointer;
+    width: 35px;
+    height: 35px; 
+    border: none;
+    margin-bottom: 15px;
 }

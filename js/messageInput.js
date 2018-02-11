@@ -1,5 +1,7 @@
 "use strict";
 
+console.log("hello messageInput.js");
+
 // DEFINTE VARIABLES
 let counter = 0;
 let messageCollect = [];
@@ -9,7 +11,7 @@ let deleteAll = document.getElementById('delete');
 
 // EVENT LISTENERS
 deleteAll.addEventListener('click', deleteAllMessages);
-document.addEventListener('keypress', getMessage);
+document.addEventListener('keypress', check);
 document.getElementById('clear').addEventListener('click', clearDiv);
 document.getElementById('list').addEventListener('click', showList);
 
@@ -17,14 +19,19 @@ document.getElementById('list').addEventListener('click', showList);
 
 // UPON PRESSING ENTER RANDOM ID IS CREATED AND ASSIGNED TO MESSAGE
 // THE MESSAGE AND ID ARE PASSED TO pushMessage() FUNCTION AND OBJECT IS CREATED AND PUSHED TO ARRAY.
-function getMessage(){
+
+function check(){
     if(event.keyCode === 13){
+        getMessage();
+    }
+}
+
+function getMessage(){
     console.log(event.target.value);
     var message = event.target.value;
     var id = Math.random().toFixed('6');
     pushMessage(message,id);
     console.log('HTML ID', id);
-    }
 }
 
 // RECEIVES MESSAGE AND ID, CREATES OBJECT AND PASSES OBJECT TO ARRAY, THEN THE MESSAGE AND ID ARE PASSED TO PRINT, WHERE

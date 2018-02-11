@@ -216,7 +216,7 @@ li {
     // border-radius: 15px;
     margin-top: 15px;
     padding: 1em;
-    color:$darkblue;
+    color:$darkblue;;    
 }
 
 .fieldStyle {
@@ -240,15 +240,26 @@ li {
 // }
 
 .remove {
-    background-image: url(../imgs/trash-light-navy.jpg);
-    background-repeat: no-repeat;
-    background-color: $darkblue;
+    background-image: url(../imgs/trash-small-dark.png);
     border-radius: 5px;
-    float: right;
+    background-color: transparent;
     z-index: 5;
+    float: right;
     cursor: pointer;
     width: 35px;
     height: 35px; 
     border: none;
-    margin-bottom: 15px;
+}
+
+.remove:hover {
+    transition: ease-in-out .2s;
+    background-image: url(../imgs/trash-small-white.png);
+    border-radius: 5px;
+    background-color: transparent;
+    z-index: 5;
+    float: right;
+    cursor: pointer;
+    width: 35px;
+    height: 35px; 
+    border: none;
 }

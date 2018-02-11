@@ -6,6 +6,7 @@ let messageCollect = messageArray.messageCollect;
 let messageDelete = messageArray.deleteAllMessages;
 let printDiv = document.getElementById('user-text');
 let deleteAll = document.getElementById('delete');
+let checkForContent = messageArray.checkForContent;
 
 
 // EVENT LISTENERS
@@ -27,6 +28,7 @@ function removeMessage (){
                 messageCollect.splice(position, 1);
                 var element = document.getElementById(index);
                 element.parentNode.removeChild(element);
+                checkForContent();
             }
             });
     }

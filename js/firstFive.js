@@ -52,4 +52,4 @@ function dataRequestFailed(event) {
 //     }
 // })
 
-module.exports = {dataRequestComplete, dataRequestFailed};
+module.exports = {dataRequestComplete, dataRequestFailed,};

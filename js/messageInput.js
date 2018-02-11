@@ -9,6 +9,7 @@ let userInput = document.getElementById('user-input');
 let printDiv = document.getElementById('user-text');
 let deleteAll = document.getElementById('delete');
 
+
 // EVENT LISTENERS
 deleteAll.addEventListener('click', deleteAllMessages);
 document.addEventListener('keypress', check);
@@ -19,6 +20,7 @@ document.getElementById('list').addEventListener('click', showList);
 
 // UPON PRESSING ENTER RANDOM ID IS CREATED AND ASSIGNED TO MESSAGE
 // THE MESSAGE AND ID ARE PASSED TO pushMessage() FUNCTION AND OBJECT IS CREATED AND PUSHED TO ARRAY.
+
 
 function check(){
     if(event.keyCode === 13){
@@ -51,6 +53,8 @@ function pushMessage(event, name){
 // CREATE STRING, ASSIGN ID AND PRINT TO PAGE
 function printToDiv(message, id){
     printDiv.innerHTML += `<li id=${id}>${message}<button class="remove"></button></li>`;
+    console.log('printDiv content: ', printDiv.innerHTML);
+    checkForContent();
 }
 
 // WHEN DELETE ALL BUTTON IS PRESSED MESSAGE ARRAY IS CLARED AND AN EMPTY STRING IS PRINTED TO DOM.
@@ -63,20 +67,31 @@ function deleteAllMessages(){
         }
         console.log(messageCollect);
         printDiv.innerHTML = '';
-    }
+        checkForContent();
+}
 }
 
 
 function showList(){
-    console.log('ran'); 
-    // printDiv.innerHTML = '';
-    messageCollect.forEach(function(item){
+    printDiv.innerHTML = '';
+        messageCollect.forEach(function(item){
         printDiv.innerHTML += `<li>${item.message}</li>`;
+        checkForContent();
     });
+
 }
 
 function clearDiv() {
     printDiv.innerHTML = '';
+    checkForContent();
 }
 
-module.exports = {pushMessage, messageCollect, showList, deleteAllMessages, getMessage};
+function checkForContent(){
+if(printDiv.innerHTML === ''){
+    document.getElementById('clear').style.opacity = '0.5';
+}else{
+    document.getElementById('clear').style.opacity = '1';
+}
+}
+
+module.exports = {pushMessage, messageCollect, showList, deleteAllMessages, getMessage, counter,checkForContent};

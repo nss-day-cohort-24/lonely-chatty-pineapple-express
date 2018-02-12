@@ -15,11 +15,13 @@ body {
     color: #1b1d28;
     font-family: $primaryFont;
     font-size: 16px;
+    height: 100%;
 }
 
 main{
     padding: 0 3em;
-    height: calc(100vh - 176px);
+    height: 100vh;
+    overflow: hidden;
     margin-top: 200px;
 }
 

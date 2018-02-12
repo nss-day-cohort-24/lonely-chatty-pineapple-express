@@ -15,11 +15,14 @@ body {
     color: #1b1d28;
     font-family: $primaryFont;
     font-size: 16px;
-  }
+    // height: 100%;
+}
+
 
 main{
     padding: 0 3em;
-    height: calc(100vh - 176px);
+    height: 100vh;
+    // overflow: hidden;
     margin-top: 200px;
     background-image: url('../imgs/ch.png');
     width: 100%;
@@ -58,7 +61,7 @@ aside{
 }
 
 .bg-lightBlue{
-    background-color: $lightblue
+    background-color: $lightblue;
 }
 
 .bg-grey{
@@ -130,7 +133,7 @@ textarea {
 input[type=submit] {
     width: 150px;
     height: 35px;
-    background-color: $darkblue;
+    background-color: $lightblue;
     margin: 5px;
     color: white;
     border: none;
@@ -293,9 +296,4 @@ li {
     width: 35px;
     height: 35px; 
     border: none;
-}
-section{
-    position: relative;
-    top:100px;
-    left:50px;
 }

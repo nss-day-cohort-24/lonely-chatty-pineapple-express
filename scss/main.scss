@@ -15,12 +15,14 @@ body {
     color: #1b1d28;
     font-family: $primaryFont;
     font-size: 16px;
-}
+  }
 
 main{
     padding: 0 3em;
     height: calc(100vh - 176px);
     margin-top: 200px;
+    background-image: url('../imgs/ch.png');
+    width: 100%;
 }
 
 nav {
@@ -193,27 +195,32 @@ li {
     border-radius: 5px;
     background-color: $lightgray;
     width: 95%;
+   
+ 
 }
 
 #user-text {
     padding: 1em;
-    margin: 0 8em;
+    margin: 0 180px;
+    
     // border: 3px solid $lightblue;
-    // border-radius: 10px;
+    
     // background-color: white;
 }
 
 #user-text p:nth-child(odd), #user-text li:nth-child(odd) {
     background-color: $lightblue;
-    // border-radius: 15px;
+    border-radius: 15px;
     margin-top: 15px;
     padding: 1em;
     color: #fff;
+
+   
 }
 
 #user-text p:nth-child(even), #user-text li:nth-child(even) {
     background-color: $lightgray;
-    // border-radius: 15px;
+    border-radius: 15px;
     margin-top: 15px;
     padding: 1em;
     color:$darkblue;
@@ -251,4 +258,9 @@ li {
     height: 35px; 
     border: none;
     margin-bottom: 15px;
+}
+section{
+    position: relative;
+    top:100px;
+    left:50px;
 }

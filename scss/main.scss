@@ -18,11 +18,14 @@ body {
     height: 100%;
 }
 
+
 main{
     padding: 0 3em;
     height: 100vh;
     overflow: hidden;
     margin-top: 200px;
+    background-image: url('../imgs/ch.png');
+    width: 100%;
 }
 
 nav {
@@ -219,13 +222,16 @@ li {
     border-radius: 5px;
     background-color: $lightgray;
     width: 95%;
+   
+ 
 }
 
 #user-text {
     padding: 1em;
-    margin: 0 8em;
+    margin: 0 180px;
+    
     // border: 3px solid $lightblue;
-    // border-radius: 10px;
+    
     // background-color: white;
 }
 
@@ -235,6 +241,8 @@ li {
     margin-top: 15px;
     padding: 1em;
     color: #fff;
+
+   
 }
 
 #user-text p:nth-child(even), #user-text li:nth-child(even) {
@@ -242,7 +250,7 @@ li {
     border-radius: 5px;
     margin-top: 15px;
     padding: 1em;
-    color:$darkblue;;    
+    color:$darkblue;
 }
 
 .fieldStyle {
@@ -288,4 +296,9 @@ li {
     width: 35px;
     height: 35px; 
     border: none;
+}
+section{
+    position: relative;
+    top:100px;
+    left:50px;
 }
